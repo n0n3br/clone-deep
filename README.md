@@ -41,7 +41,7 @@ var b = cloneDeep(a);
 <script src="clone-deep.umd.min.js"></script>
 ```
 
-After this the library will be available to the Global as clone-deep:
+After this the library will be available to the Global as cloneDeep:
 
 ```javascript
 let a = { a: [1, 2, 3], b: [4, 5, 6] };

@@ -1,5 +1,7 @@
 # clone-deep
 
+![Build Status](https://travis-ci.com/n0n3br/clone-deep.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/n0n3br/clone-deep/badge.svg)](https://coveralls.io/github/n0n3br/clone-deep)
 clone-deep is a little library you can use to clone your objects, no matter how deep they are.
 
 ## Installation

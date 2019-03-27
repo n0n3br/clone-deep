@@ -23,8 +23,7 @@ let b = cloneDeep(a);
 #### CommonJS
 
 ```javascript
-var cloneDeep = require('@n0n3br/clone-deep').default;
-var a = { a: [ 1, 2, 3], b: [ 4, 5, 6] }
+var cloneDeep = require("@n0n3br/clone-deep").default;
 var b = cloneDeep(a);
 ```
 

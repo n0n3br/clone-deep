@@ -12,51 +12,57 @@ npm install @n0n3br/clone-deep
 
 ## Usage
 
-####  ES6
+#### ES6
 
 ```javascript
-import cloneDeep from '@n0n3br/clone-deep';
-let a = { a: [ 1, 2, 3], b: [ 4, 5, 6] }
+import cloneDeep from "@n0n3br/clone-deep";
+let a = { a: [1, 2, 3], b: [4, 5, 6] };
 let b = cloneDeep(a);
 ```
 
 #### CommonJS
 
 ```javascript
-var cloneDeep = require('@n0n3br/clone-deep').default;
-var a = { a: [ 1, 2, 3], b: [ 4, 5, 6] }
+var cloneDeep = require("@n0n3br/clone-deep").default;
+var a = { a: [1, 2, 3], b: [4, 5, 6] };
 var b = cloneDeep(a);
 ```
 
 #### UMD in Browser
+
 ```html
 <!-- to import non-minified version -->
-<script src="spotify-wrapper.umd.js"></script>
+<script src="clone-deep.umd.js"></script>
 
 <!-- to import minified version -->
-<script src="spotify-wrapper.umd.min.js"></script>
+<script src="clone-deep.umd.min.js"></script>
 ```
+
 After this the library will be available to the Global as clone-deep:
+
 ```javascript
-let a = { a: [ 1, 2, 3], b: [ 4, 5, 6] }
+let a = { a: [1, 2, 3], b: [4, 5, 6] };
 let b = cloneDeep(a);
 ```
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## Versioning
+
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-| ![Rogério Amorim](https://avatars2.githubusercontent.com/u/371808?s=100&v=4)|
-|:---------------------:|
-|  [Rogério Amorim](https://github.com/n0n3br)   |
+| ![Rogério Amorim](https://avatars2.githubusercontent.com/u/371808?s=100&v=4) |
+| :--------------------------------------------------------------------------: |
+|                 [Rogério Amorim](https://github.com/n0n3br)                  |
 
 See also the list of [contributors](https://github.com/n0n3br/clone-deep/graphs/contributors) who participated in this project.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -1,11 +1,10 @@
 import { expect } from "chai";
-import cloneDepp from "../src/main";
-import cloneDeep from "../src/main";
+import cloneDeep from "../src/index";
 
-describe("Main", () => {
+describe("clonedeep", () => {
   it("should clone primitive types", () => {
     let a = 3;
-    let b = cloneDepp(a);
+    let b = cloneDeep(a);
     a = 5;
     expect(a).to.be.equal(5);
     expect(b).to.be.equal(3);

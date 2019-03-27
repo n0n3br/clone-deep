@@ -1,16 +1,18 @@
-import { join } from "path";
+const path = require("path");
 
-const include = join(__dirname, "src");
+const include = path.join(__dirname, "src");
 
-export default {
+module.exports = {
   entry: "./index",
+  mode: "production",
   output: {
-    path: join(__dirname, "dist"),
+    path: path.join(__dirname, "dist"),
     libraryTarget: "umd",
-    library: "@n0n3br/clone-deep"
+    library: "cloneDeep",
+    filename: "clone-deep.umd.js"
   },
   devtool: "source-map",
   module: {
-    loaders: [{ test: /\.js$/, loader: "babel-loader", include }]
+    rules: [{ test: /\.js$/, loader: "babel-loader", include }]
   }
 };

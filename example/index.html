@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CloneDeep Example</title>
+  </head>
+  <body>
+    <h1>CloneDeep Example</h1>
+    <hr />
+    <p>Open the console to seethe results</p>
+    <script src="../dist/clone-deep.umd.js"></script>
+    <script>
+      let a = [{ a: 1, b: 2, c: 3 }, { d: 4, e: 5, f: 6 }];
+      let b = cloneDeep(a);
+      console.log("a=> ", a);
+      console.log("b=> ", b);
+      a[0].a = 3;
+      console.log("a changed to ", a);
+      console.log("b =>", b);
+    </script>
+  </body>
+</html>

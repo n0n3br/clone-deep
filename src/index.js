@@ -1,13 +1,13 @@
-const cloneDeep = value => {
+const cloneDeep = (value) => {
   let response = value;
   if (Array.isArray(response)) {
     response = [...response];
     response.forEach((item, index) => {
       response[index] = cloneDeep(item);
     });
-  } else if (typeof response === "object") {
+  } else if (typeof response === 'object') {
     response = Object.assign({}, response);
-    Object.keys(response).forEach(key => {
+    Object.keys(response).forEach((key) => {
       response[key] = cloneDeep(response[key]);
     });
   }

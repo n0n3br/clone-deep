@@ -23,7 +23,8 @@ let b = cloneDeep(a);
 #### CommonJS
 
 ```javascript
-var cloneDeep = require("@n0n3br/clone-deep").default;
+var cloneDeep = require('@n0n3br/clone-deep').default;
+var a = { a: [ 1, 2, 3], b: [ 4, 5, 6] }
 var b = cloneDeep(a);
 ```
 
@@ -51,7 +52,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-| ![Rogério Amorim](https://avatars2.githubusercontent.com/u/371808?s=400&v=4 | width=100)|
+| ![Rogério Amorim](https://avatars2.githubusercontent.com/u/371808?s=100&v=4)|
 |:---------------------:|
 |  [Rogério Amorim](https://github.com/n0n3br)   |
 
